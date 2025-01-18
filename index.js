@@ -37,7 +37,7 @@ app.put('/teas/:id',(req,res)=>{
     const {name,price}=req.body
     tea.name =name
     tea.price=price
-    res.send(200).send(tea)
+    res.status(200).send(tea)
 })
 
 //delete teas
